@@ -1,0 +1,123 @@
+body{
+    display: flex;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(164, 172, 242);
+
+} 
+
+.container{
+    /* border: 2px solid black; */
+    height: 60%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: rgba(255, 255, 255, 0.674);   
+ 
+    border-radius: 2px;
+    box-shadow: 1px 1px 30px black;
+    font-family: 'Twinkle Star', cursive;
+
+}
+
+.text{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 95%;
+    align-items: center;
+}
+#btn{
+    /* border: 3px solid red; */
+    text-align: center;
+ 
+    font-size: 20px;
+    background-color: rgb(84, 192, 206);
+    text-shadow: 1px 1px 10px white;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: 1s;
+    font-family: cursive;
+}
+#btn:hover{
+    
+    background-color:  rgb(111, 174, 251);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 10px black;
+}
+
+.box{
+    height: 15%;
+    padding: 5px;
+}
+#tweet {
+    height: 35px;
+    padding: 2px 20px;
+    float: right;
+    cursor: pointer;
+    width: 35px;
+    transition: .5s;
+    animation: fly 2s infinite ;
+}
+
+@keyframes fly {
+    0%{
+     transform: rotatex(1deg);
+    }
+    20%{
+        transform: rotatez(15deg);
+    }
+    40%{
+        transform: rotatey(25deg);
+    }
+    50%{
+        transform: rotatey(35deg);
+    }
+    60%{ 
+        transform: rotatey(25deg);
+    }
+    80%{ 
+        transform: rotatez(15deg);
+    }
+    100%{
+   
+        transform: rotatex(1deg);
+    }
+}
+ #coma{
+    height: 30px;
+    padding: 8px 20px;
+    width: 30px;
+    margin: 0px;
+ }
+ #author{
+     text-align: right;
+     font-size: 20px;
+     padding: 5px 30px;
+ }
+ #qoutes{
+     font-size: 22px;
+     padding: 1px 40px;
+ }
+
+
+ @media (max-width:650px) and (min-width:520px){
+    .container{
+      
+        height: 75%;
+        width: 75%;
+        font-size: 18px;
+    
+    }
+ }
+ @media (max-width:520px){
+    .container{
+      
+        height: 80%;
+        width: 80%;
+        font-size: 18px;
+    
+    }
+ }
